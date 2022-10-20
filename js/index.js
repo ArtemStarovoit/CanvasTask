@@ -76,10 +76,10 @@ class startCanvas{
         ctx.beginPath();
         ctx.moveTo(intersectX, intersectY);
         ctx.arc(intersectX, intersectY, 4, 0, 2 * Math.PI);
-        ctx.lineWidth = 1;
+        ctx.lineWidth = 0.5;
         ctx.lineTo(intersectX, intersectY);
         ctx.strokeStyle = color;
-        ctx.fillStyle = color;
+        ctx.fillStyle = 'red';
         ctx.fill();
         ctx.stroke();
         ctx.closePath();
@@ -89,7 +89,7 @@ class startCanvas{
         for (let i = 0; i < dots.length; i++) {
             for (let k = i; k < dots.length; k++) {
                 this.get_line_intersection(...dots[i], ...dots[k]);
-                this.buildCircle('red')
+                this.buildCircle('black')
             }
         }
     }
