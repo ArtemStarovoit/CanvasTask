@@ -76,7 +76,7 @@ class startCanvas{
         ctx.beginPath();
         ctx.moveTo(intersectX, intersectY);
         ctx.arc(intersectX, intersectY, 4, 0, 2 * Math.PI);
-        ctx.lineWidth = 0.5;
+        ctx.lineWidth = 1;
         ctx.lineTo(intersectX, intersectY);
         ctx.strokeStyle = color;
         ctx.fillStyle = 'red';
